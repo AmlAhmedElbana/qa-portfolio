@@ -1,96 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amal QA Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aml Ahmed | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </head>
-
-<body class="bg-gray-50 text-gray-800 font-sans">
-  <!-- Header -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="container mx-auto flex justify-between items-center py-4 px-6">
-      <h1 class="text-2xl font-bold text-indigo-600">Aml QA Portfolio</h1>
-      <nav class="space-x-4">
-        <a href="#about" class="hover:text-indigo-600">About</a>
-        <a href="#skills" class="hover:text-indigo-600">Skills</a>
-        <a href="#projects" class="hover:text-indigo-600">Projects</a>
-        <a href="#cv" class="hover:text-indigo-600">CV</a>
-        <a href="#contact" class="hover:text-indigo-600">Contact</a>
-      </nav>
-    </div>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1>Aml Ahmed</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="bg-indigo-600 text-white py-20 text-center">
-    <h2 class="text-4xl font-extrabold mb-4">Hi, I'm Aml 👩‍💻</h2>
-    <p class="text-lg max-w-2xl mx-auto">Software Tester | QA Enthusiast | Passionate about building reliable software through testing, automation, and documentation.</p>
+  <section class="hero">
+    <img src="assets/profile.jpg" alt="Profile Photo"/>
+    <h2>Hello, I'm Aml 👋</h2>
+    <p>Software Tester | QA Enthusiast | CS Graduate</p>
   </section>
 
   <!-- About -->
-  <section id="about" class="container mx-auto py-16 px-6">
-    <h3 class="text-3xl font-bold text-indigo-600 mb-6">About Me</h3>
-    <p class="leading-relaxed">I am a Computer Science graduate specializing in Software Testing. I’ve worked on multiple QA projects involving manual testing, API testing, and automation with Postman & Newman. I enjoy solving problems, documenting processes, and ensuring software quality.</p>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="bg-white py-16 px-6">
-    <div class="container mx-auto">
-      <h3 class="text-3xl font-bold text-indigo-600 mb-6">Skills</h3>
-      <ul class="grid grid-cols-2 md:grid-cols-4 gap-6">
-        <li class="bg-gray-100 p-4 rounded-lg shadow">Manual Testing</li>
-        <li class="bg-gray-100 p-4 rounded-lg shadow">API Testing (Postman, Newman)</li>
-        <li class="bg-gray-100 p-4 rounded-lg shadow">SQL Basics</li>
-        <li class="bg-gray-100 p-4 rounded-lg shadow">Test Case Design</li>
-        <li class="bg-gray-100 p-4 rounded-lg shadow">RTM & Bug Reporting</li>
-        <li class="bg-gray-100 p-4 rounded-lg shadow">Git/GitHub</li>
-        <li class="bg-gray-100 p-4 rounded-lg shadow">CI/CD with GitHub Actions</li>
-        <li class="bg-gray-100 p-4 rounded-lg shadow">Docker & WSL (basics)</li>
-      </ul>
-    </div>
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I’m a Computer Science graduate, passionate about Software Testing and building reliable systems.
+      Currently learning QA methodologies, Automation, and API Testing.
+    </p>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="container mx-auto py-16 px-6">
-    <h3 class="text-3xl font-bold text-indigo-600 mb-6">Projects</h3>
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h4 class="text-xl font-semibold mb-2">Day 07 – HTTP Basics</h4>
-        <p class="text-sm text-gray-600 mb-4">Tested HTTP requests using cURL on JSONPlaceholder API, documented requests and responses.</p>
-        <a href="#" class="text-indigo-600 font-medium">View on GitHub →</a>
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <img src="assets/project1.png" alt="Project 1"/>
+        <h3>Project 1</h3>
+        <p>Manual Testing Portfolio with Test Cases, Bug Reports, and RTM.</p>
+        <a href="https://github.com/amlahmedelbana/day14-mini-proj-1" target="_blank">View</a>
       </div>
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h4 class="text-xl font-semibold mb-2">Day 13 – API Authentication & Schema Validation</h4>
-        <p class="text-sm text-gray-600 mb-4">Built Postman collections with token extraction, schema validation, and Newman test reports.</p>
-        <a href="#" class="text-indigo-600 font-medium">View on GitHub →</a>
+      <div class="card">
+        <img src="assets/project2.png" alt="Project 2"/>
+        <h3>Project 2</h3>
+        <p>API Testing Collection on Postman with Newman CI Integration.</p>
+        <a href="https://github.com/amlahmedelbana" target="_blank">View</a>
       </div>
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h4 class="text-xl font-semibold mb-2">Day 14 – UI ↔ API Mini Project</h4>
-        <p class="text-sm text-gray-600 mb-4">Created local UI integrated with JSONPlaceholder API, wrote 20+ test cases, RTM, and bug reports.</p>
-        <a href="#" class="text-indigo-600 font-medium">View on GitHub →</a>
-      </div>
-      <!-- Add more projects as needed -->
     </div>
   </section>
 
-  <!-- CV -->
-  <section id="cv" class="bg-white py-16 px-6 text-center">
-    <h3 class="text-3xl font-bold text-indigo-600 mb-6">Download My CV</h3>
-    <a href="CV.pdf" class="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-700">Download CV</a>
-  </section>
-
   <!-- Contact -->
-  <section id="contact" class="container mx-auto py-16 px-6">
-    <h3 class="text-3xl font-bold text-indigo-600 mb-6">Contact</h3>
-    <p class="mb-4">📧 Email: <a href="aamlalbna@gmail.com" class="text-indigo-600">youremail@example.com</a></p>
-    <p class="mb-4">💼 LinkedIn: <a href="www.linkedin.com/in/amlahmedelbana" class="text-indigo-600">linkedin.com/in/yourprofile</a></p>
-    <p>🐙 GitHub: <a href="#" class="text-indigo-600">https://github.com/AmlAhmedElbana</a></p>
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <p>📧 <a href="mailto:aml.ahmed@example.com">aml.ahmed@example.com</a></p>
+    <p>🔗 <a href="https://www.linkedin.com/in/amlahmed">LinkedIn</a> | <a href="https://github.com/amlahmedelbana">GitHub</a></p>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-100 text-center py-6 mt-12">
-    <p class="text-sm text-gray-500">© 2025 Amal Ahmed | QA Portfolio</p>
+  <footer>
+    <p>© 2025 Aml Ahmed</p>
   </footer>
 </body>
 </html>
