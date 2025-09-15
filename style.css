@@ -16,11 +16,12 @@ body {
 
 /* Navbar */
 header {
-  background: #222;
-  color: #fff;
+  background: #ffffff; /* أبيض */
+  color: #333;
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 nav {
@@ -30,20 +31,30 @@ nav {
   padding: 1rem 0;
 }
 
-.logo { font-size: 1.5rem; font-weight: 700; }
+.logo { 
+  font-size: 1.5rem; 
+  font-weight: 700; 
+  color: #0097a7;
+}
 
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
+  list-style: none;   /* يشيل الدوتس */
+  display: flex;      /* يخليها بالعرض */
+  gap: 2rem;          /* مسافة بين اللينكات */
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
-  color: #fff;
+  color: #333;        /* لون غامق وواضح */
   text-decoration: none;
   font-weight: 500;
+  transition: 0.3s;
 }
-.nav-links a:hover { color: #00bcd4; }
+
+.nav-links a:hover { 
+  color: #0097a7;     /* لما تعملي hover يتغير اللون */
+}
 
 /* Hero */
 .hero {
