@@ -219,3 +219,52 @@ footer p {
 footer p:hover {
   color: #00bcd4;
 }
+/* Fade-in effect */
+.section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease-out;
+}
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scroll to Top Button */
+#topBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #0097a7;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+#topBtn.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+#topBtn:hover {
+  background: #00796b;
+}
+#typing {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  display: inline-block;
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: #fff; }
+}
