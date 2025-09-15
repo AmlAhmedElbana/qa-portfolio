@@ -104,8 +104,29 @@ nav {
 .card img { border-radius: 8px; max-width: 100%; }
 
 /* Contact */
-#contact p { text-align: center; margin: 0.5rem 0; }
-#contact a { color: #0097a7; text-decoration: none; }
+#contact p {
+  display: flex;
+  justify-content: center;  /* يخليهم في النص */
+  align-items: center;
+  gap: 10px; /* مسافة بين الأيقونة والكلمة */
+  margin: 1rem 0;
+  font-size: 1.2rem; /* يخلي الكلام أوضح شوية */
+}
+
+#contact i {
+  font-size: 1.5rem;  /* حجم الأيقونة */
+  color: #0097a7;     /* نفس اللون الأساسي */
+}
+#contact h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #0097a7;
+}
+#contact a:hover {
+  text-decoration: underline;
+  color: #00796b; /* درجة أغمق شوية */
+}
 
 /* Footer */
 footer {
